@@ -22,6 +22,10 @@
 		AB11FA2417E5ADB400BC6B6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB11FA0317E5ADB400BC6B6B /* UIKit.framework */; };
 		AB11FA2C17E5ADB400BC6B6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB11FA2A17E5ADB400BC6B6B /* InfoPlist.strings */; };
 		AB11FA2E17E5ADB400BC6B6B /* JFMapViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB11FA2D17E5ADB400BC6B6B /* JFMapViewExampleTests.m */; };
+		AB11FA3817E5ADD600BC6B6B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB11FA3717E5ADD600BC6B6B /* MapKit.framework */; };
+		AB11FA3A17E5ADDE00BC6B6B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB11FA3917E5ADDE00BC6B6B /* CoreLocation.framework */; };
+		AB11FA3D17E5B04600BC6B6B /* JFMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB11FA3C17E5B04600BC6B6B /* JFMapAnnotation.m */; };
+		AB11FA3F17E5B0F900BC6B6B /* capitals.json in Resources */ = {isa = PBXBuildFile; fileRef = AB11FA3E17E5B0F900BC6B6B /* capitals.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,11 @@
 		AB11FA2917E5ADB400BC6B6B /* JFMapViewExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JFMapViewExampleTests-Info.plist"; sourceTree = "<group>"; };
 		AB11FA2B17E5ADB400BC6B6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB11FA2D17E5ADB400BC6B6B /* JFMapViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFMapViewExampleTests.m; sourceTree = "<group>"; };
+		AB11FA3717E5ADD600BC6B6B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AB11FA3917E5ADDE00BC6B6B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AB11FA3B17E5B04600BC6B6B /* JFMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMapAnnotation.h; sourceTree = "<group>"; };
+		AB11FA3C17E5B04600BC6B6B /* JFMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMapAnnotation.m; sourceTree = "<group>"; };
+		AB11FA3E17E5B0F900BC6B6B /* capitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capitals.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB11FA3A17E5ADDE00BC6B6B /* CoreLocation.framework in Frameworks */,
+				AB11FA3817E5ADD600BC6B6B /* MapKit.framework in Frameworks */,
 				AB11FA0217E5ADB400BC6B6B /* CoreGraphics.framework in Frameworks */,
 				AB11FA0417E5ADB400BC6B6B /* UIKit.framework in Frameworks */,
 				AB11FA0017E5ADB400BC6B6B /* Foundation.framework in Frameworks */,
@@ -103,6 +114,8 @@
 		AB11F9FE17E5ADB400BC6B6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB11FA3917E5ADDE00BC6B6B /* CoreLocation.framework */,
+				AB11FA3717E5ADD600BC6B6B /* MapKit.framework */,
 				AB11F9FF17E5ADB400BC6B6B /* Foundation.framework */,
 				AB11FA0117E5ADB400BC6B6B /* CoreGraphics.framework */,
 				AB11FA0317E5ADB400BC6B6B /* UIKit.framework */,
@@ -114,6 +127,7 @@
 		AB11FA0517E5ADB400BC6B6B /* JFMapViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				AB11FA3E17E5B0F900BC6B6B /* capitals.json */,
 				AB11FA0E17E5ADB400BC6B6B /* JFAppDelegate.h */,
 				AB11FA0F17E5ADB400BC6B6B /* JFAppDelegate.m */,
 				AB11FA1117E5ADB400BC6B6B /* Main_iPhone.storyboard */,
@@ -122,6 +136,8 @@
 				AB11FA1817E5ADB400BC6B6B /* JFViewController.m */,
 				AB11FA1A17E5ADB400BC6B6B /* Images.xcassets */,
 				AB11FA0617E5ADB400BC6B6B /* Supporting Files */,
+				AB11FA3B17E5B04600BC6B6B /* JFMapAnnotation.h */,
+				AB11FA3C17E5B04600BC6B6B /* JFMapAnnotation.m */,
 			);
 			path = JFMapViewExample;
 			sourceTree = "<group>";
@@ -234,6 +250,7 @@
 			files = (
 				AB11FA1617E5ADB400BC6B6B /* Main_iPad.storyboard in Resources */,
 				AB11FA1B17E5ADB400BC6B6B /* Images.xcassets in Resources */,
+				AB11FA3F17E5B0F900BC6B6B /* capitals.json in Resources */,
 				AB11FA1317E5ADB400BC6B6B /* Main_iPhone.storyboard in Resources */,
 				AB11FA0A17E5ADB400BC6B6B /* InfoPlist.strings in Resources */,
 			);
@@ -255,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB11FA1017E5ADB400BC6B6B /* JFAppDelegate.m in Sources */,
+				AB11FA3D17E5B04600BC6B6B /* JFMapAnnotation.m in Sources */,
 				AB11FA1917E5ADB400BC6B6B /* JFViewController.m in Sources */,
 				AB11FA0C17E5ADB400BC6B6B /* main.m in Sources */,
 			);
